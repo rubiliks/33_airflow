@@ -1,0 +1,17 @@
+{"timestamp":"2025-05-03T21:01:50.493347Z","level":"info","event":".","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-03T21:01:50.570123","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-03T21:01:50.570418","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/hw_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-03T21:01:50.581324Z","level":"info","event":"/home/airflow/airflow_hw","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-03T21:01:50.592887Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-03T21:01:50.593131Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-03T21:01:50.593292Z","level":"info","event":"Current task name:pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-03T21:01:50.593452Z","level":"info","event":"Dag name:car_price_prediction","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-03T21:01:51.293985","level":"info","event":"model: LogisticRegression, acc_mean: 0.7591, acc_std: 0.0075","logger":"root"}
+{"timestamp":"2025-05-03T21:02:06.758183","level":"info","event":"model: RandomForestClassifier, acc_mean: 0.7772, acc_std: 0.0041","logger":"root"}
+{"timestamp":"2025-05-03T21:02:12.289592","level":"info","event":"model: SVC, acc_mean: 0.7871, acc_std: 0.0042","logger":"root"}
+{"timestamp":"2025-05-03T21:02:12.289705","level":"info","event":"best model: SVC, accuracy: 0.7871","logger":"root"}
+{"timestamp":"2025-05-03T21:02:14.124437","level":"error","event":"Task failed with exception","logger":"task","error_detail":[{"exc_type":"FileNotFoundError","exc_value":"[Errno 2] No such file or directory: 'opt/airflow/dags/data/models/cars_pipe_202505032102.pkl'","exc_notes":[],"syntax_error":null,"is_cause":false,"frames":[{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":825,"name":"run"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/task_runner.py","lineno":1088,"name":"_execute_task"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/bases/operator.py","lineno":408,"name":"wrapper"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py","lineno":212,"name":"execute"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/standard/operators/python.py","lineno":235,"name":"execute_callable"},{"filename":"/home/airflow/.local/lib/python3.12/site-packages/airflow/sdk/execution_time/callback_runner.py","lineno":81,"name":"run"},{"filename":"/opt/airflow/plugins/modules/pipeline.py","lineno":129,"name":"pipeline"}]}]}
+{"timestamp":"2025-05-03T21:02:14.125400Z","level":"info","event":"Task instance in failure state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-03T21:02:14.125583Z","level":"info","event":"Task start","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-03T21:02:14.125734Z","level":"info","event":"Task:<Task(PythonOperator): pipeline>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-03T21:02:14.125881Z","level":"info","event":"Failure caused by [Errno 2] No such file or directory: 'opt/airflow/dags/data/models/cars_pipe_202505032102.pkl'","chan":"stdout","logger":"task"}

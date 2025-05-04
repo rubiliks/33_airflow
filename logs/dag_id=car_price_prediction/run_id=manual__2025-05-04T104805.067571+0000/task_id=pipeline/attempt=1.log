@@ -1,0 +1,17 @@
+{"timestamp":"2025-05-04T10:48:10.553236Z","level":"info","event":".","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T10:48:10.619591","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-04T10:48:10.619828","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/hw_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-04T10:48:10.629956Z","level":"info","event":"/home/airflow/airflow_hw","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T10:48:10.642876Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T10:48:10.643130Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T10:48:10.643301Z","level":"info","event":"Current task name:pipeline","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T10:48:10.643478Z","level":"info","event":"Dag name:car_price_prediction","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T10:48:11.363659","level":"info","event":"model: LogisticRegression, acc_mean: 0.7591, acc_std: 0.0075","logger":"root"}
+{"timestamp":"2025-05-04T10:48:27.257881","level":"info","event":"model: RandomForestClassifier, acc_mean: 0.7765, acc_std: 0.0037","logger":"root"}
+{"timestamp":"2025-05-04T10:48:32.788218","level":"info","event":"model: SVC, acc_mean: 0.7871, acc_std: 0.0042","logger":"root"}
+{"timestamp":"2025-05-04T10:48:32.788340","level":"info","event":"best model: SVC, accuracy: 0.7871","logger":"root"}
+{"timestamp":"2025-05-04T10:48:34.690177","level":"info","event":"Model is saved as /opt/airflow/data/models/cars_pipe_202505041048.pkl","logger":"root"}
+{"timestamp":"2025-05-04T10:48:34.691654","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-04T10:48:34.713526Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T10:48:34.713812Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T10:48:34.713988Z","level":"info","event":"Task operator:<Task(PythonOperator): pipeline>","chan":"stdout","logger":"task"}

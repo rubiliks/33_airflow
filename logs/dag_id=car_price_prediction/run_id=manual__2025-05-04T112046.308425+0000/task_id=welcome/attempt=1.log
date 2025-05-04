@@ -1,0 +1,17 @@
+{"timestamp":"2025-05-04T11:20:47.309096Z","level":"info","event":".","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:20:47.376359","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-04T11:20:47.376600","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/hw_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-04T11:20:47.386787Z","level":"info","event":"/home/airflow/airflow_hw","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:20:47.433174Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:20:47.433394Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:20:47.433548Z","level":"info","event":"Current task name:welcome","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:20:47.433675Z","level":"info","event":"Dag name:car_price_prediction","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:20:47.433804Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:20:47.433925Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:20:47.434064Z","level":"info","event":"Task operator:<Task(BashOperator): welcome>","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:20:47.394201","level":"info","event":"Tmp dir root location: /tmp","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-04T11:20:47.395437","level":"info","event":"Running command: ['/usr/bin/bash', '-c', 'echo \"welcome!\"']","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-04T11:20:47.403444","level":"info","event":"Output:","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-04T11:20:47.404434","level":"info","event":"welcome!","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-04T11:20:47.404564","level":"info","event":"Command exited with return code 0","logger":"airflow.task.hooks.airflow.providers.standard.hooks.subprocess.SubprocessHook"}
+{"timestamp":"2025-05-04T11:20:47.404887","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('01969b06-f3f1-7bf5-a4d0-137e96a5ab8d'), task_id='welcome', dag_id='car_price_prediction', run_id='manual__2025-05-04T11:20:46.308425+00:00', try_number=1, map_index=-1, hostname='4e46ee0713cf', context_carrier={}, task=<Task(BashOperator): welcome>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2025, 5, 4, 11, 20, 46, 585782, tzinfo=TzInfo(UTC)), end_date=None, is_mapped=False)","logger":"task"}

@@ -1,0 +1,40 @@
+{"timestamp":"2025-05-04T11:38:15.160014Z","level":"info","event":".","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.235284","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-05-04T11:38:15.235520","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/hw_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-05-04T11:38:15.245925Z","level":"info","event":"/home/airflow/airflow_hw","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.262573Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.262811Z","level":"info","event":" Previous state of the Task instance: queued","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.263013Z","level":"info","event":"Current task name:predict","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.263273Z","level":"info","event":"Dag name:car_price_prediction","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.263448Z","level":"info","event":"predicted_df - Empty DataFrame","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.263645Z","level":"info","event":"Columns: [id, predict]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.263866Z","level":"info","event":"Index: []","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.272652Z","level":"info","event":"                                         description  ...  year","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.272881Z","level":"info","event":"0  2011 Audi A3 2.0T Premium Plus PZEV Wagon2011 ...  ...  2011","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.273070Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.273247Z","level":"info","event":"[1 rows x 18 columns]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.286763","level":"warning","event":"/opt/airflow/plugins/modules/predict.py:24: FutureWarning: Calling int on a single element Series is deprecated and will raise a TypeError in the future. Use int(ser.iloc[0]) instead\n  predicted_df.loc[len(predicted_df.index)] = [int(data.id),y]  # занесем в подготовленный датафрейм результат\n","logger":"py.warnings"}
+{"timestamp":"2025-05-04T11:38:15.294038Z","level":"info","event":"                                         description  ...  year","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.294249Z","level":"info","event":"0  2018 navigator reserve in great condition If y...  ...  2018","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.294398Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.294533Z","level":"info","event":"[1 rows x 18 columns]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.303444","level":"warning","event":"/opt/airflow/plugins/modules/predict.py:24: FutureWarning: Calling int on a single element Series is deprecated and will raise a TypeError in the future. Use int(ser.iloc[0]) instead\n  predicted_df.loc[len(predicted_df.index)] = [int(data.id),y]  # занесем в подготовленный датафрейм результат\n","logger":"py.warnings"}
+{"timestamp":"2025-05-04T11:38:15.311461Z","level":"info","event":"                                         description  ...  year","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.311657Z","level":"info","event":"0  2007 Lexus GS350 3.5 Model   Clean title 160k ...  ...  2007","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.311831Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.312006Z","level":"info","event":"[1 rows x 18 columns]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.323223","level":"warning","event":"/opt/airflow/plugins/modules/predict.py:24: FutureWarning: Calling int on a single element Series is deprecated and will raise a TypeError in the future. Use int(ser.iloc[0]) instead\n  predicted_df.loc[len(predicted_df.index)] = [int(data.id),y]  # занесем в подготовленный датафрейм результат\n","logger":"py.warnings"}
+{"timestamp":"2025-05-04T11:38:15.330696Z","level":"info","event":"                                         description  ...  year","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.330879Z","level":"info","event":"0  2008 Jeep Wrangler X  Offered by: R&L Auto -- ...  ...  2008","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.330987Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.331085Z","level":"info","event":"[1 rows x 18 columns]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.339580","level":"warning","event":"/opt/airflow/plugins/modules/predict.py:24: FutureWarning: Calling int on a single element Series is deprecated and will raise a TypeError in the future. Use int(ser.iloc[0]) instead\n  predicted_df.loc[len(predicted_df.index)] = [int(data.id),y]  # занесем в подготовленный датафрейм результат\n","logger":"py.warnings"}
+{"timestamp":"2025-05-04T11:38:15.347265Z","level":"info","event":"                                         description  ...  year","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.347433Z","level":"info","event":"0  Excellent condition with Leather Stone interio...  ...  2013","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.347649Z","level":"info","event":"","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.347817Z","level":"info","event":"[1 rows x 18 columns]","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.361453","level":"warning","event":"/opt/airflow/plugins/modules/predict.py:24: FutureWarning: Calling int on a single element Series is deprecated and will raise a TypeError in the future. Use int(ser.iloc[0]) instead\n  predicted_df.loc[len(predicted_df.index)] = [int(data.id),y]  # занесем в подготовленный датафрейм результат\n","logger":"py.warnings"}
+{"timestamp":"2025-05-04T11:38:15.367916","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-05-04T11:38:15.377336Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.377547Z","level":"info","event":" Previous state of the Task instance: running","chan":"stdout","logger":"task"}
+{"timestamp":"2025-05-04T11:38:15.377692Z","level":"info","event":"Task operator:<Task(PythonOperator): predict>","chan":"stdout","logger":"task"}
